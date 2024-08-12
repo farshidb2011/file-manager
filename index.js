@@ -66,6 +66,11 @@ app.use('*', async (req, res) => {
   }
 })
 
+app.get('welcome', (req, res) => {
+  res.set('Content-type', 'plain/text');
+  res.status(200).send('Hi farshid');
+})
+
 // Start http server
 app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`)
