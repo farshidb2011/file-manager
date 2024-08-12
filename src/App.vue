@@ -20,6 +20,9 @@ const fetchClick = async () => {
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  {{ text }}
+  <button @click="fetchClick">Fetch</button>
 </template>
 
 <style scoped>
